@@ -42,7 +42,8 @@ sortByTitle.sort(library.getDocuments());
         for (Document doc : library.getDocuments()) {
             System.out.println(doc);
         }
-
+   MutilThread.LibraryManager manager = new MutilThread.LibraryManager();
+        manager.addDocumentsConcurrently(List.of(book1, book2,book3));
 
     }
 }
